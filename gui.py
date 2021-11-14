@@ -42,11 +42,24 @@ root.title("AB File Transfer")
 root.configure(bg=windowBg)
 root.iconbitmap('resource/icon.ico')
 img = PhotoImage(file="resource/bg.png")
-label = Label(
-    root,
-    image=img
-)
+label = Label(root,image=img,borderwidth=0,compound="center",highlightthickness = 0)
 label.place(x=0, y=0)
+root.resizable(False, False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 buttonFont = font.Font(size=30)
@@ -77,7 +90,10 @@ def logged_in():
     bufferGrid3.destroy()
     
     if type(onSend.inport) == str:
-        onSend.inport = int(onSend.inport)
+        if onSend.inport != '':
+            onSend.inport = int(onSend.inport)
+        else:
+            onSend.inport = 22
 
     
     
