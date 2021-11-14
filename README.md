@@ -1,6 +1,8 @@
 Helo I'm Albert aka PikkuHurja
+
+
+
 I am interested in coding and building electronics
-Sample Text
 
 
 
